@@ -390,7 +390,7 @@ body.lite .sidebar { transition: none; }
         <div class="row"><select id="aMode"><option value="poly">Bayugan boundary file + buffer</option><option value="bbox">Custom bounding box (exploratory)</option><option value="circle">Radius from city center (exploratory)</option></select></div>
         <div id="aPoly">
           <div class="btns"><button id="aLoad" class="ghost small">Load data/bayugan_barangays.geojson</button><label class="ghost small filebtn">Upload boundary<input type="file" id="aFile" accept=".geojson,.json" hidden /></label></div>
-          <div class="row"><label for="aBuf">Buffer distance (km) from your methodology</label><input type="number" id="aBuf" min="0" step="0.1" placeholder="required — 0 = no buffer" /></div>
+        <div class="row"><label for="aBuf">Buffer distance (km) from your methodology</label><input type="number" id="aBuf" min="0" step="0.1" value="100" placeholder="buffer in km" /></div>
         </div>
         <div id="aBox" hidden><div class="grid2"><input type="number" id="bS" placeholder="South lat" step="any"><input type="number" id="bN" placeholder="North lat" step="any"><input type="number" id="bW" placeholder="West lon" step="any"><input type="number" id="bE" placeholder="East lon" step="any"></div></div>
         <div id="aCir" hidden><input type="number" id="cR" min="1" step="1" placeholder="Radius km around city center" /></div>
